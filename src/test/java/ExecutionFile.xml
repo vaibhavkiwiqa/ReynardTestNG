@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite1" verbose="10">
+<test name="Login Test" >
+	  	<parameter name="username" value="rosario@mailinator.com"/>
+	<parameter name="password" value="Rosario@12345"/>
+    <classes>
+      <class name="Module1.Login"/>
+<class name="Module1.QHSE_Management"/>
+       
+  </classes>
+ </test>
+</suite>
