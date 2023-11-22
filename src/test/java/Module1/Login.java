@@ -1,5 +1,6 @@
 package Module1;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -12,14 +13,15 @@ import org.testng.annotations.Test;
 public class Login {
 
 	static WebDriver driver;
+	public static Logger logs;
 
 	@BeforeTest
 	public void openBrowser() {
-
+        logs = Logger.getLogger("devpinoyLogger");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://reynard-qa-m7xqu.ondigitalocean.app/authentication/sign-in");
-
+        logs.info("Browser Open");
 	}
 
 	@Test

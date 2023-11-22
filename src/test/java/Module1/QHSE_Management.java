@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class QHSE_Management extends Login {
 
-	@Test
+	@Test 
 	public void QHSE_Management1() throws InterruptedException {
 		Thread.sleep(3000);
 		WebElement m = driver.findElement(By.xpath("//span[text()='QHSE Cards']"));
